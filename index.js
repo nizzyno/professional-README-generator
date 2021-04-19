@@ -1,6 +1,7 @@
 // Modules imported
 const inquirer = require("inquirer");
-
+const generateMarkdown = require("./utils/generate-markdown");
+const writeReadme = require("./utils/generate-readme")
 
 // Questions for user input
 const questions = [

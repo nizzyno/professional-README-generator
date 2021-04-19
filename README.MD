@@ -8,6 +8,11 @@ Noah Harbison
     * <a href="https://nizzyno.github.io/readme-generator/">'README-generator - Github IO'</a>
 *
 
+  ## Table of Contents
+  - [Summary](#summary)
+  - [Demo](#demo)
+  - [Installation](#installation)
+
 ## Summary
 
 *
@@ -36,7 +41,7 @@ Noah Harbison
     * FS, Inquirer and local modules
 *
 
-## To Execute:
+## Installation:
 
 *
     * Run Terminal or CLI. Install Inquirer by using the command 'npm install inquirer' while in the project root directory.
