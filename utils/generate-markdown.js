@@ -1,14 +1,14 @@
 // Function that returns a license badge
-function renderLicenseBadge(license) {
-    if (license === "No License") {
-      return "";
-    }
-  
-    return `[![license badge](https://img.shields.io/badge/license-${license}-brightgreen)](${renderLicenseLink(license)})`
-  };
+const renderLicenseBadge = license => {
+  if (license === "No License") {
+    return "";
+  }
+
+  return `[![license badge] (https://img.shields.io/badge/license-${license}-brightgreen)](${renderLicenseLink(license)})`
+};
   
   // Function that returns the license link
-  function renderLicenseLink(license) {
+  const renderLicenseLink = license => {
     switch(license) {
       case "MIT":
         return "https://opensource.org/licenses/MIT";
@@ -20,16 +20,16 @@ function renderLicenseBadge(license) {
   };
   
   // Function that returns the license section of README
-  function renderLicenseSection(license) {
+  const renderLicenseSection = license => {
     if (license === "No License") {
       return "";
     }
     return `## License
   Licensed under the [${license}](${renderLicenseLink(license)}) license.`;
-  }
+  };
   
   // Function to generate markdown for README
-  function generateMarkdown(data) {
+  const generateMarkdown = data => {
     return `# ${data.title}
   ${renderLicenseBadge(data.license)}
   ## Description
@@ -60,6 +60,6 @@ function renderLicenseBadge(license) {
   [My GitHub Site](https://www.github.com/${data.username})\\
   If you have any additional questions or concerns, please contact me by email at <${data.email}>.
   ${renderLicenseSection(data.license)}`;
-  }
-  
+  };
+
   module.exports = generateMarkdown;

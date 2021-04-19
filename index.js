@@ -35,8 +35,8 @@ const questions = [
         type: "input",
         name: "installation",
         message: "What are the installation requirements for your project (required)?",
-        validate: instructionsInput => {
-            if (instructionsInput) {
+        validate: instructionInput => {
+            if (instructionInput) {
                 return true;
             } else {
                 console.log("Please enter the installation instructions for your project!");
@@ -79,32 +79,26 @@ const questions = [
     {
         type: "list",
         name: "license",
-        message: "Choose a license your project (required).",
+        message: "Choose a license for your project (required).",
         choices: ["MIT", "Apache", "GPL", "No License"],
         validate: licenseInput => {
             if (licenseInput) {
                 return true;
             } else {
-                console.log("Please choose a license your project!");
+                console.log("Please choose a license for your project!");
                 return false;
             }
         }
     },
     {
         type: "input",
-        name: "testCommands",
-        message: "What commands can the user input to run tests on your application?",
-        default: "node index.js"
-    },
-    {
-        type: "input",
-        name: "username",
-        message: "What is your GitHub username(required)?",
+        name:"testCommands",
+        message: "What is your Github username (required)?",
         validate: usernameInput => {
             if (usernameInput) {
                 return true;
             } else {
-                console.log("Please enter your GitHub username!");
+                console.log("Please enter your Github usersname!");
                 return false;
             }
         }
@@ -112,7 +106,7 @@ const questions = [
     {
         type: "input",
         name: "email",
-        message: "Please enter an email for people to contact you with questions (required).",
+        message: "Please enter an email for people to contact you with questions, concerns and feedback (required).",
         validate: emailInput => {
             if (emailInput) {
                 return true;
