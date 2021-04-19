@@ -92,7 +92,7 @@ const questions = [
     },
     {
         type: "input",
-        name:"testCommands",
+        name:"userName",
         message: "What is your Github username (required)?",
         validate: usernameInput => {
             if (usernameInput) {

@@ -57,7 +57,7 @@ const renderLicenseBadge = license => {
   ${data.testCommands}
   \`\`\`
   ## Questions
-  [My GitHub Site](https://www.github.com/${data.username})\\
+  [My GitHub Site](https://www.github.com/${data.userName})\\
   If you have any additional questions or concerns, please contact me by email at <${data.email}>.
   ${renderLicenseSection(data.license)}`;
   };
