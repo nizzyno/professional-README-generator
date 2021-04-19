@@ -10,15 +10,15 @@
   - [Questions](#questions)
   - [License](#license)
   ## Installation
-  node.js, npm init and install inquirer
+  node init, npm install inquirer
   To install the necessary dependencies for this application, run the following commands in your command line while in the project root directory:  
   ```
   npm install inquirer
   ```
   ## Usage
-  Launch terminal or CLI, install dependencies at root directory, run app with 'node index'
+  Init npm, install inquirer, run app with 'node index' in CLI at root directory
   ## Contributing
-  github.com/nizzyno/readme-generator
+  github.com/nizzyno
   ## Testing
   To run the test suite for this application, run the following commands in your command line while in the project root directory:  
   ```
