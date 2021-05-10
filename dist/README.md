@@ -1,7 +1,7 @@
-# n
-  [![license badge] (https://img.shields.io/badge/license-MIT-brightgreen)](https://opensource.org/licenses/MIT)
+# employee-tracker node/mysql
+  
   ## Description
-  n
+  A command-line application to manage a company's employee database, using Node.js, Inquirer, and MySQL.
   ## Table of Contents
   - [Installation](#installation)
   - [Usage](#usage)
@@ -10,15 +10,15 @@
   - [Questions](#questions)
   - [License](#license)
   ## Installation
-  n
+  npm init, mysql -u root -p
   To install the necessary dependencies for this application, run the following commands in your command line while in the project root directory:  
   ```
-  n
+  npm i inquirer mysql2 console.table express
   ```
   ## Usage
-  n
+  Create, edit and delete employees
   ## Contributing
-  n
+  https://www.github.com/nizzyno
   ## Testing
   To run the test suite for this application, run the following commands in your command line while in the project root directory:  
   ```
@@ -26,6 +26,5 @@
   ```
   ## Questions
   [My GitHub Site](https://www.github.com/nizzyno)\
-  If you have any additional questions or concerns, please contact me by email at <n>.
-  ## License
-  Licensed under the [MIT](https://opensource.org/licenses/MIT) license.
+  If you have any additional questions or concerns, please contact me by email at <nizzyno@icloud.com>.
+  This project is licensed under [GPL](undefined).
